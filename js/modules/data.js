@@ -8,7 +8,7 @@ const person = {
         children : true, //Boolean
         role: "Prof",
         desc : "all about blah blah",
-        avatar: "trevor.jpg",
+        avatar: "kim_jung_gi_m.jpg",
         nickname: "The red guy",
         sayHello : function() { console.log ('hi!') }
     },
