@@ -6,7 +6,7 @@
             Make each item's min width 170 pixels and its their max width 1 fraction.
             The grid system will devide up the available space and fit them in.
         */
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+       // grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     }
 
     #main_buttons {

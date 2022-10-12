@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/main.css">
     
@@ -18,40 +21,22 @@
 
     <section id="main_buttons">
         <a href="illustrator.html"><img src="images/illustrator_2.png" alt="Illustrator Icon"></a>
-        <a href="#.html"><img src="images/super_heroe.png" alt="Super Heroe Logo"></a>
-        <a href="#.html"><img src="images/band.png" alt="Band Logo"></a>
+        <a href="superheroe.html"><img src="images/super_heroe.png" alt="Super Heroe Logo"></a>
+        <a href="band.html"><img src="images/band.png" alt="Band Logo"></a>
     </section>
 
-    <section id="team-section"></section>
-
-    <!-- template tags should go at the bottom of the HTML markup -->
-    <!-- template tags don't get entered, but their content does -->
-
-    <template id="bio-template">
+    <section id="team-section">
         <section class="bio_panel">
-            <div class="avatar">
-                <!-- src gets added dynamically -->
-                <img src="" alt="prof image">
+            <div v-for="prof in remoteData">
+                <img :src='"images/" + prof.avatar1' alt="">
+                <h1>{{ prof.name1 }}</h1>
+                <h2>{{ prof.role1 }}</h2>
+                <p>{{ prof.nickname1 }}</p>
             </div>
-            <!-- slug is just placeholder - this will get replaced -->
-            <h2 class="p_name">slug</h2>
-            <h3 class="p_role">slug</h3>
-            <p class="p_nickname">slug</p>
         </section>
-    </template>
+    </section>
 
-    <footer>
-        <nav class="subnav">
-            <ul>
-                
-            </ul>
-        </nav>
-    </footer>
-
-<!-- your JS always goes here -->
-<!-- make the JS file wait to be parsed with the defer attribute (last thing the DOM engine reads)-->
-<!-- the type attribute tels the JS engine that we're using modules (standalone JS files)-->
-    <!-- <script src="js/modules/data.js"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/main.js" type="module" defer></script>
 
 </body>

@@ -1,5 +1,5 @@
 // Create a function to export
-function getData(callback) {
+//function getData(callback) {
     console.log(`Hi, I'm dataMiner`);
 
     // use the Fetch API to go and get out data

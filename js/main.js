@@ -1,44 +1,42 @@
-// imports always go at the top of the file
-//this is called an IIFE (Inmediatly Invoked Function Expression)
-// import { person } from "./modules/data.js";
-import { getData } from "./modules/dataMiner.js";
+	
+(()=> {
 
-//it's a pretty common JavaScript programming pattern
-//also called a module file
-(() => {
-    console.log('3 Favourite Things');
+    const { createApp } = Vue
+    
+    createApp({
+        created() {
+            console.log('Vue Instance is Created');
+            //Fetch the remote data here and pass it to the data object
 
-    let theTeam = document.querySelector('#team-section'),
-        theTemplate = document.querySelector('#bio-template').content;
+            fetch('./data.json')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
 
-    // Just a test to see if this is imported properly
-    getData();
+                //Push the data into the vue instance
+                //The "this" keyword inside of the Vue instance ALWAYS refers to the instance itself
+                this.remoteData = data;
+            })
+            .catch(error => console.error(error));
+        },
 
-        //debugger;
+        data() {
+            return {
+            welcome: 'Hello Vue!',
+            name: 'Your name here',
+            profs: ['Joe', 'Jhon', 'Justin', 'Jarrod'],
+            remoteData: {}
+                }
+            },
 
-    function buildTeam(data) {
-        //get all the keys (names) from the data object and use that to iterate through the data
-        
-        //debugger;
-        const people = Object.keys(data); // Object.keys creates an array
-
-        people.forEach(prof => {
-            // copy the template's contents
-            let panel = theTemplate.cloneNode(true);
-
-            // get a reference to the template's elements
-            let containers = panel.firstElementChild.children;
-
-            // grab the image from the object and set it as the source
-            containers[0].querySelector('img').src = `images/${data[prof].avatar}`;
-
-            containers[1].textContent = data[prof].name;
-            containers[2].textContent = data[prof].role;
-            containers[3].textContent = data[prof].nickname;
-
-            theTeam.appendChild(panel);
-        })
+    methods: {
+        logClick() {
+            console.log('Clicked!');
+        }
     }
 
-    getData(buildTeam);
-})();
+    }).mount('#team-section')
+    
+    
+    })();
+    

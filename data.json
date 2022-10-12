@@ -1,32 +1,24 @@
 {
-    "Justin": {
-        "name":"Justin",
-        "role":"Coordinator",
-        "nickname":"i don't know",
-        "avatar":"kim_jung_gi_m.jpg"
+    "Kim": {
+        "name1":"Kim Jung Gi (R.I.P.)",
+        "role1":"My Favourite Illustrator",
+        "nickname1":"Kim Jung-gi was a South Korean cartoonist and illustrator. In his career he became known for the detail of his illustrations and for his ability to draw from memory and use perspectives without guide lines. I have admired him for a couple of years that I have been following him on social networks and it was important for me to include him on this list of favorite things because he just died in Paris this very week that I was doing this assignment.",
+        "avatar1":"kim_jung_gi_m.jpg"
     },
-    "John": {
-        "name":"John",
-        "role":"super chill prof",
-        "nickname":"just john",
-        "avatar":"john.jpg"
+
+    "superman": {
+        "name2":"Superman",
+        "role2":"My Favourite Superheroe",
+        "nickname2":"I know, I know... he is the most old-fashioned superhero, so powerful that he becomes impossible to defeat so he has practically no rival (boring), he has the dumbest emblem of all, he was the last superhero he stopped using the underpants on the outside, it's ridiculous that he only wears glasses and nobody realizes that Clark Kent and Superman are the same person, that they had to remove his mustache in the Justice League, etc, etc... I KNOW! but for me it was one of my first experiences in the cinema and in the world of superheroes; The first movie I saw in my life as a child was Superma 3 (Very bad, I also know... also I'm too old) and this marked my childhood; I had a costume of this character that I used day and night until he no longer served me; he ran and jumped on the beds and the sofa in my house because in my mind he I WAS SUPERMAN and he was the coolest thing in the world. Even today I am excited to buy a comic of him and to see him in his ridiculous suit seems wonderful to me and I hope to see a decent movie of him again (please DC !!).",
+        "avatar2":"superman_m.jpg"
     },
-    "Joe": {
-        "name":"Joe",
-        "role":"Prof",
-        "nickname":"Teddy Bear",
-        "avatar":"joe.jpg"
-    },
-    "Pan": {
-        "name":"Pan",
-        "role":"Code Ninja",
-        "nickname":"Spider Pan",
-        "avatar":"jarrod.jpg"
-    },
-    "Trevor": {
-        "name":"Trevor",
-        "role":"Dark Arts Prof",
-        "nickname":"T Dazzle",
-        "avatar":"trevor.jpg"
+
+    "u2": {
+        "name3":"U2",
+        "role3":"My Favourite Band",
+        "nickname3":"U2 is the Irish band that since the 90's I started to like a lot! Although they had already been in the career for almost 20 years at that time and had already had the successes of The Joshua Tree and Achtung Baby, they only came into my life when they released their POP album; curiously one of his most criticized albums; but it allowed me to go through his entire career and fall in love with his music and when they released All That You Can't Leave Behind it was the consecration of my connection with his style; simple rock, incredible melodies, deep lyrics, a great singer and a creative guitarist made this band my favorite... will they come to London one day??... Dreaming doesn't cost anything.",
+        "avatar3":"u2_m.jpg"
     }
+
+    
   }
