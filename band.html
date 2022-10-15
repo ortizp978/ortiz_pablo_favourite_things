@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Pablo Ortiz's 3 Favourite Things</title>
+</head>
+<body>
+    <h1 class="hidden">Pablo Ortiz's 3 Favourite Things</h1>
+
+    <section class="main_logo">
+    <a href="index.html"><img src="images/Favourite_Things_Logo.png" alt="3 Favourite Things Logo"></a>
+    </section>
+
+    <section id="main_buttons">
+        <a href="illustrator.html"><img src="images/illustrator.png" alt="Illustrator Icon"></a>
+        <a href="superheroe.html"><img src="images/super_heroe.png" alt="Super Heroe Logo"></a>
+        <a href="band.html"><img src="images/band_2.png" alt="Band Logo"></a>
+    </section>
+
+    <section id="team-section">
+        <section class="bio_panel">
+            <div v-for="prof in remoteData">
+                <img :src='"images/" + prof.avatar3' alt="">
+                <h1>{{ prof.name3 }}</h1>
+                <h2>{{ prof.role3 }}</h2>
+                <p>{{ prof.nickname3 }}</p>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module" defer></script>
+
+</body>
+</html>
